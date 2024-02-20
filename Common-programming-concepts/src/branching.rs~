@@ -1,0 +1,14 @@
+fn main(){
+    let counter: i8 = 0;
+
+    // if statement
+    let condition: bool = true;
+    let y = if condition {3} else {2};
+
+    // loop
+    let result = loop {
+        counter += 1;
+        if counter == 10 {break counter;}
+    };
+    println!("The result is {}", result);
+}
