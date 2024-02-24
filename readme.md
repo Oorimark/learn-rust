@@ -1,4 +1,6 @@
-Learning Rust For Tauri
+## Learning Rust For Tauri
 
-Material: Rust Documentation (Rust Book)
-Link: https://doc.rust-lang.org/stable/book 
+### Material
+
+Rust Documentation (Rust Book)
+Link: https://doc.rust-lang.org/stable/book
