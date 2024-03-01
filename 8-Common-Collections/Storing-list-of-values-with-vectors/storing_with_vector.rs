@@ -13,9 +13,32 @@ fn main (){
     // Reading elements of vectors
     let third: &i32 = &v2[2]; // using indexing
 
-    let third: Option<&i32> = v2.get(2);    
     // using the get method
+    let third: Option<&i32> = v2.get(2);    
     if let Some(third) = third {
         println!("The Third element is {}", third);
     } else { println!("Theres' no third element")};
+
+    /* Iterating a Vector */
+
+    // Iterating a vectors with immutable reference
+    for i in &v1 { println!("{}", i) }
+
+    // Iterating a vector with mutable reference
+    for i in &mut v1 { println!("{}", *i += 50) }
+
+    // Using an enum to store multiple types
+    enum SpreadsheetCell {
+        Int(i32),
+        Float(f64),
+        Text(String)
+    }
+
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Float(10.12),
+        SpreadsheetCell::Text(String::from("blue"))
+    ];
+
+    
 }
