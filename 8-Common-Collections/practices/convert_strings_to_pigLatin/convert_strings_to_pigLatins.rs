@@ -16,8 +16,10 @@ fn main() {
 
     // loop through the words
     for word in sentence.split_whitespace() {
-        let mut first_char: Option<char> = None;
         let new_word: String;
+        let mut first_char: Option<char> = None;
+
+        // collecting the first character in the word
         if let Some(fc) = word.chars().next() {
             first_char = Some(fc);
         };
